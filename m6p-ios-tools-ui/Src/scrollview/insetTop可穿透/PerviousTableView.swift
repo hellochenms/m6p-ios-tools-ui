@@ -11,7 +11,7 @@ import UIKit
 class PerviousTableView: UITableView {
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         if point.y < 0 {
-            return true
+            return false
         } else {
             return super.point(inside: point, with: event)
         }

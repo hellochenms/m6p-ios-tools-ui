@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		995195FF22D07E7700756B1B /* PerviousTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995195FE22D07E7700756B1B /* PerviousTableView.swift */; };
+		9951960122D07E8800756B1B /* UIView+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9951960022D07E8800756B1B /* UIView+Corner.swift */; };
+		9951960622D0905900756B1B /* UICollectionView+Reload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9951960522D0905900756B1B /* UICollectionView+Reload.swift */; };
 		999BECF822CB90D3004624BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BECF722CB90D3004624BB /* AppDelegate.swift */; };
 		999BECFA22CB90D3004624BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BECF922CB90D3004624BB /* ViewController.swift */; };
 		999BECFD22CB90D3004624BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999BECFB22CB90D3004624BB /* Main.storyboard */; };
 		999BECFF22CB90D5004624BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999BECFE22CB90D5004624BB /* Assets.xcassets */; };
 		999BED0222CB90D5004624BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999BED0022CB90D5004624BB /* LaunchScreen.storyboard */; };
-		999BED0B22CB9189004624BB /* PerviousTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BED0A22CB9189004624BB /* PerviousTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		995195FE22D07E7700756B1B /* PerviousTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerviousTableView.swift; sourceTree = "<group>"; };
+		9951960022D07E8800756B1B /* UIView+Corner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Corner.swift"; sourceTree = "<group>"; };
+		9951960522D0905900756B1B /* UICollectionView+Reload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reload.swift"; sourceTree = "<group>"; };
 		999BECF422CB90D3004624BB /* m6p-ios-tools-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "m6p-ios-tools-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		999BECF722CB90D3004624BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		999BECF922CB90D3004624BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +28,6 @@
 		999BECFE22CB90D5004624BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		999BED0122CB90D5004624BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999BED0322CB90D5004624BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		999BED0A22CB9189004624BB /* PerviousTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerviousTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		995195FB22D07E7700756B1B /* 圆角 */ = {
+			isa = PBXGroup;
+			children = (
+				9951960022D07E8800756B1B /* UIView+Corner.swift */,
+			);
+			name = "圆角";
+			path = "Src/圆角";
+			sourceTree = "<group>";
+		};
+		995195FC22D07E7700756B1B /* scrollview */ = {
+			isa = PBXGroup;
+			children = (
+				995195FD22D07E7700756B1B /* insetTop可穿透 */,
+				9951960422D0904400756B1B /* 处理collection-reloadData闪 */,
+			);
+			name = scrollview;
+			path = Src/scrollview;
+			sourceTree = "<group>";
+		};
+		995195FD22D07E7700756B1B /* insetTop可穿透 */ = {
+			isa = PBXGroup;
+			children = (
+				995195FE22D07E7700756B1B /* PerviousTableView.swift */,
+			);
+			path = "insetTop可穿透";
+			sourceTree = "<group>";
+		};
+		9951960422D0904400756B1B /* 处理collection-reloadData闪 */ = {
+			isa = PBXGroup;
+			children = (
+				9951960522D0905900756B1B /* UICollectionView+Reload.swift */,
+			);
+			path = "处理collection-reloadData闪";
+			sourceTree = "<group>";
+		};
 		999BECEB22CB90D3004624BB = {
 			isa = PBXGroup;
 			children = (
@@ -59,21 +98,13 @@
 				999BECF722CB90D3004624BB /* AppDelegate.swift */,
 				999BECF922CB90D3004624BB /* ViewController.swift */,
 				999BECFB22CB90D3004624BB /* Main.storyboard */,
-				999BED0922CB9115004624BB /* scrollview */,
+				995195FB22D07E7700756B1B /* 圆角 */,
+				995195FC22D07E7700756B1B /* scrollview */,
 				999BECFE22CB90D5004624BB /* Assets.xcassets */,
 				999BED0022CB90D5004624BB /* LaunchScreen.storyboard */,
 				999BED0322CB90D5004624BB /* Info.plist */,
 			);
 			path = "m6p-ios-tools-ui";
-			sourceTree = "<group>";
-		};
-		999BED0922CB9115004624BB /* scrollview */ = {
-			isa = PBXGroup;
-			children = (
-				999BED0A22CB9189004624BB /* PerviousTableView.swift */,
-			);
-			name = scrollview;
-			path = Src/scrollview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9951960622D0905900756B1B /* UICollectionView+Reload.swift in Sources */,
 				999BECFA22CB90D3004624BB /* ViewController.swift in Sources */,
 				999BECF822CB90D3004624BB /* AppDelegate.swift in Sources */,
-				999BED0B22CB9189004624BB /* PerviousTableView.swift in Sources */,
+				995195FF22D07E7700756B1B /* PerviousTableView.swift in Sources */,
+				9951960122D07E8800756B1B /* UIView+Corner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
