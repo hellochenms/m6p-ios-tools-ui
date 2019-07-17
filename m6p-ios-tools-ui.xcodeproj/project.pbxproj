@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		995195FF22D07E7700756B1B /* PerviousTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995195FE22D07E7700756B1B /* PerviousTableView.swift */; };
-		9951960122D07E8800756B1B /* UIView+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9951960022D07E8800756B1B /* UIView+Corner.swift */; };
+		9951960122D07E8800756B1B /* UIView+M2Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9951960022D07E8800756B1B /* UIView+M2Corner.swift */; };
 		9951960622D0905900756B1B /* UICollectionView+Reload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9951960522D0905900756B1B /* UICollectionView+Reload.swift */; };
 		999BECF822CB90D3004624BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BECF722CB90D3004624BB /* AppDelegate.swift */; };
 		999BECFA22CB90D3004624BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BECF922CB90D3004624BB /* ViewController.swift */; };
 		999BECFD22CB90D3004624BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999BECFB22CB90D3004624BB /* Main.storyboard */; };
 		999BECFF22CB90D5004624BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999BECFE22CB90D5004624BB /* Assets.xcassets */; };
 		999BED0222CB90D5004624BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999BED0022CB90D5004624BB /* LaunchScreen.storyboard */; };
+		999D0E9022DEC778002FB057 /* UIImage+M2SimpleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999D0E8F22DEC778002FB057 /* UIImage+M2SimpleImage.swift */; };
+		999D0EDC22DECF3A002FB057 /* UIFont+M2Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999D0EDB22DECF3A002FB057 /* UIFont+M2Padding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		995195FE22D07E7700756B1B /* PerviousTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerviousTableView.swift; sourceTree = "<group>"; };
-		9951960022D07E8800756B1B /* UIView+Corner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Corner.swift"; sourceTree = "<group>"; };
+		9951960022D07E8800756B1B /* UIView+M2Corner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+M2Corner.swift"; sourceTree = "<group>"; };
 		9951960522D0905900756B1B /* UICollectionView+Reload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reload.swift"; sourceTree = "<group>"; };
 		999BECF422CB90D3004624BB /* m6p-ios-tools-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "m6p-ios-tools-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		999BECF722CB90D3004624BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		999BECFE22CB90D5004624BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		999BED0122CB90D5004624BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999BED0322CB90D5004624BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999D0E8F22DEC778002FB057 /* UIImage+M2SimpleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+M2SimpleImage.swift"; sourceTree = "<group>"; };
+		999D0EDB22DECF3A002FB057 /* UIFont+M2Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+M2Padding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +48,7 @@
 		995195FB22D07E7700756B1B /* 圆角 */ = {
 			isa = PBXGroup;
 			children = (
-				9951960022D07E8800756B1B /* UIView+Corner.swift */,
+				9951960022D07E8800756B1B /* UIView+M2Corner.swift */,
 			);
 			name = "圆角";
 			path = "Src/圆角";
@@ -98,6 +102,8 @@
 				999BECF722CB90D3004624BB /* AppDelegate.swift */,
 				999BECF922CB90D3004624BB /* ViewController.swift */,
 				999BECFB22CB90D3004624BB /* Main.storyboard */,
+				999D0E9522DECECD002FB057 /* 文本padding */,
+				999D0E8C22DEBDE6002FB057 /* 生成image */,
 				995195FB22D07E7700756B1B /* 圆角 */,
 				995195FC22D07E7700756B1B /* scrollview */,
 				999BECFE22CB90D5004624BB /* Assets.xcassets */,
@@ -105,6 +111,24 @@
 				999BED0322CB90D5004624BB /* Info.plist */,
 			);
 			path = "m6p-ios-tools-ui";
+			sourceTree = "<group>";
+		};
+		999D0E8C22DEBDE6002FB057 /* 生成image */ = {
+			isa = PBXGroup;
+			children = (
+				999D0E8F22DEC778002FB057 /* UIImage+M2SimpleImage.swift */,
+			);
+			name = "生成image";
+			path = "Src/生成image";
+			sourceTree = "<group>";
+		};
+		999D0E9522DECECD002FB057 /* 文本padding */ = {
+			isa = PBXGroup;
+			children = (
+				999D0EDB22DECF3A002FB057 /* UIFont+M2Padding.swift */,
+			);
+			name = "文本padding";
+			path = "Src/文本padding";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +204,11 @@
 			files = (
 				9951960622D0905900756B1B /* UICollectionView+Reload.swift in Sources */,
 				999BECFA22CB90D3004624BB /* ViewController.swift in Sources */,
+				999D0EDC22DECF3A002FB057 /* UIFont+M2Padding.swift in Sources */,
 				999BECF822CB90D3004624BB /* AppDelegate.swift in Sources */,
 				995195FF22D07E7700756B1B /* PerviousTableView.swift in Sources */,
-				9951960122D07E8800756B1B /* UIView+Corner.swift in Sources */,
+				9951960122D07E8800756B1B /* UIView+M2Corner.swift in Sources */,
+				999D0E9022DEC778002FB057 /* UIImage+M2SimpleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
